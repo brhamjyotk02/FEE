@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+</head>
+<body>
+
+<h1>Shopping Cart</h1>
+
+<button onclick="add('Shoes', 2000)">Add Shoes</button>
+<button onclick="add('Phone', 10000)">Add Phone</button>
+
+<h3>Cart Items: <span id="count">0</span></h3>
+<h3>Total: ₹<span id="total">0</span></h3>
+
+<div id="items"></div>
+
+<script>
+let cart = []; 
+let total = 0;
+
+function add(name, price){
+    cart.push({name, price});  
+    total += price;
+
+    alert(name + " added");
+    show();
+}
+
+function removeItem(i){
+    alert(cart[i].name + " removed");
+    total -= cart[i].price;
+    cart.splice(i,1);
+    show();
+}
+
+function show(){
+document.getElementById("count").innerText = cart.length;
+ if(cart.length === 0){
+        total = 0;
+    }
+ document.getElementById("total").innerText = total;
+let html = "";
+    cart.forEach((c,i)=>{
+    html += c.name + " <button onclick='removeItem("+i+")'>X</button><br>";
+    });
+
+    document.getElementById("items").innerHTML = html;
+}
+</script>
+
+</body>
+</html> -->
