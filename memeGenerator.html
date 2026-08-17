@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MEME</title>
+    <link rel="stylesheet" href="memeGenerator.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title">Meme Generator</h1>
+
+      <div class="meme-card">
+        <img
+          id="memeImage"
+          src="https://i.imgflip.com/1bij.jpg"
+          alt="meme"
+        />
+        <div class="top-text" id="topText">WHEN YOU CODE</div>
+        <div class="bottom-text" id="bottomText">AND IT FINALLY WORKS</div>
+      </div>
+
+      <div class="controls">
+        <input id="topInput" type="text" placeholder="Top text" />
+        <input id="bottomInput" type="text" placeholder="Bottom text" />
+        <button onclick="createMeme()">Create Meme</button>
+      </div>
+    </div>
+
+    <script src="memeGenerator.js"></script>
+  </body>
+</html>
